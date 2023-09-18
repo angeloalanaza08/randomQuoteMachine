@@ -1,0 +1,80 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+$fontStyle: Poppins;
+$primaryColor: #f7f7f7;
+$secondaryColor: #b6d2f7;
+$tertiaryColor: #2d2d2d;
+$generalUnit: 2em;
+
+* {
+  font-family: $fontStyle;
+}
+body {
+  height: 100vh;
+  background-color: $primaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+#quote-box {
+  display: flex;
+  padding: 2em 2em 0em 2em;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: $primaryColor;
+  max-width: 375px;
+  border-radius: 1em;
+  box-shadow: 0px 3px 10px rgba(85, 85, 85, 0.2);
+  margin: 20px;
+}
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $generalUnit;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f0efef;
+  padding: 1em 2em 1em 2em;
+  border-radius: 0em 0em 1em 1em;
+}
+
+.quote-icon {
+  font-size: 50px;
+  color: $secondaryColor;
+}
+.tweet-quote {
+  text-decoration: none;
+  color: $tertiaryColor;
+}
+#author {
+  padding: 5px 20px 5px 20px;
+  background-color: $secondaryColor;
+  border-radius: 2em;
+  font-size: 12px;
+}
+#new-quote {
+  font-size: 24px;
+  color: $tertiaryColor;
+  padding: 15px;
+  border-radius: 10em;
+  cursor: pointer;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1em;
+}
+
+#author-image {
+  width: auto;
+  height: 30px;
+  border-radius: 10em;
+  border: solid $secondaryColor;
+}

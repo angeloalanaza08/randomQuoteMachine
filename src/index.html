@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <wrapper id="quote-box" class="brt-brt">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div id="text"></div>
+        <div class="author-container">
+          <img src="img_girl.jpg" id="author-image" />
+          <div id="author"></div>
+        </div>
+      </wrapper>
+      <div class="action-buttons">
+        <a id="tweet-quote" class="tweet-quote" target="_blank" href="#"
+          >Tweet This Quote</a
+        >
+        <i
+          class="fa-solid fa-arrow-right-long"
+          src="#"
+          id="new-quote"
+          onClick="generateQuote()"
+        ></i>
+      </div>
+    </div>
+  </body>
+</html>
