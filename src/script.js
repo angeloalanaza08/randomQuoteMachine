@@ -9,34 +9,40 @@ const QUOTEBANK = [
     quote: "There is nothing impossible to they who will try.",
     author: "Alexander the Great",
     image: "./authorImages/alexander-the-great.jpg",
+    background: "./backgroundImages/6.jpg",
   },
   {
     quote: "The bad news is time flies. The good news is you're the pilot.",
     author: "Michael Altshuler",
     image: "./authorImages/michael-altshuler.jpg",
+    background: "./backgroundImages/5.jpg",
   },
   {
     quote:
       "Keep your face always toward the sunshine, and shadows will fall behind you.",
     author: "Aristotle",
     image: "./authorImages/aristoutle.jpg",
+    background: "./backgroundImages/4.jpg",
   },
   {
     quote:
       "It is during our darkest moments that we must focus to see the light.",
     author: "Marie Forleo",
     image: "./authorImages/marie-forleo.jpg",
+    background: "./backgroundImages/3.jpg",
   },
   {
     quote:
       "Not having the best situation, but seeing the best in your situation is the key to happiness.",
     author: "Marie Forleo",
     image: "./authorImages/alexander-the-great.jpg",
+    background: "./backgroundImages/2.jpg",
   },
   {
     quote: "Try to be a rainbow in someone's cloud.",
     author: "Maya Angelou",
     image: "./authorImages/maya-angelou.jpg",
+    background: "./backgroundImages/1.jpg",
   },
 ];
 //Generate Random Quote at first Load
@@ -53,6 +59,7 @@ function generateQuote() {
   let authorFormat = randomQuoteData.author.replace(/ /g, "%20");
   tweetLink += " -" + authorFormat;
 
+  document.body.style.backgroundImage = `url(${randomQuoteData.background})`;
   document.getElementById("tweet-quote").href = tweetLink;
   document.getElementById("text").innerText = randomQuoteData.quote;
   document.getElementById("author").innerText = randomQuoteData.author;
